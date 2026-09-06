@@ -1,0 +1,73 @@
+{
+  "classification": {
+    "LogisticRegression": {
+      "val_accuracy": 0.8324,
+      "val_macro_f1": 0.7530447963681782
+    },
+    "RandomForestClassifier": {
+      "val_accuracy": 0.841,
+      "val_macro_f1": 0.7566865222129421
+    },
+    "GradientBoostingClassifier": {
+      "val_accuracy": 0.8734666666666666,
+      "val_macro_f1": 0.7790089576467185
+    },
+    "best_model": "GradientBoostingClassifier",
+    "test_accuracy": 0.8828,
+    "test_macro_f1": 0.796360573350703,
+    "test_report": {
+      "Eligible": {
+        "precision": 0.9158333333333334,
+        "recall": 0.9524222202963861,
+        "f1-score": 0.9337694889332597,
+        "support": 11539.0
+      },
+      "High_Risk": {
+        "precision": 0.7367000771010023,
+        "recall": 0.641060046964106,
+        "f1-score": 0.6855605381165919,
+        "support": 2981.0
+      },
+      "Not_Eligible": {
+        "precision": 0.8399014778325123,
+        "recall": 0.7104166666666667,
+        "f1-score": 0.7697516930022573,
+        "support": 480.0
+      },
+      "accuracy": 0.8828,
+      "macro avg": {
+        "precision": 0.8308116294222826,
+        "recall": 0.767966311309053,
+        "f1-score": 0.796360573350703,
+        "support": 15000.0
+      },
+      "weighted avg": {
+        "precision": 0.8778037648354018,
+        "recall": 0.8828,
+        "f1-score": 0.879193527304502,
+        "support": 15000.0
+      }
+    }
+  },
+  "regression": {
+    "LinearRegression": {
+      "val_mae": 1855.722630878161,
+      "val_rmse": 2764.6855064588162,
+      "val_r2": 0.9544489734954447
+    },
+    "RandomForestRegressor": {
+      "val_mae": 1441.467225759226,
+      "val_rmse": 2339.128557544112,
+      "val_r2": 0.9673926970099187
+    },
+    "GradientBoostingRegressor": {
+      "val_mae": 1430.1216723029681,
+      "val_rmse": 2277.0326843030216,
+      "val_r2": 0.9691009429840564
+    },
+    "best_model": "GradientBoostingRegressor",
+    "test_mae": 1401.9838205496017,
+    "test_rmse": 2235.092635066269,
+    "test_r2": 0.9701291483575822
+  }
+}
